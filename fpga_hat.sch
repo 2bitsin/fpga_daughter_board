@@ -2606,17 +2606,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 6200 1550 6200
 $Comp
-L Connector:DB9_Male_MountingHoles Joy1
-U 1 1 618669CE
-P 850 6200
-F 0 "Joy1" H 700 6800 50  0000 L CNN
-F 1 "DB9_Male_MountingHoles" H 200 7000 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 850 6200 50  0001 C CNN
-F 3 " ~" H 850 6200 50  0001 C CNN
-	1    850  6200
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR0150
 U 1 1 62032B19
 P 2400 6600
@@ -2661,38 +2650,6 @@ Text Label 2750 6400 0    50   ~ 0
 JR1
 Text Label 2700 6500 0    50   ~ 0
 S&C1
-Text Label 1700 3900 0    50   ~ 0
-U0
-Text Label 1650 4000 0    50   ~ 0
-JD0
-Text Label 2350 4100 0    50   ~ 0
-L0
-Text Label 1650 4200 0    50   ~ 0
-JR0
-Text Label 2350 3900 0    50   ~ 0
-A&B0
-Text Label 2350 4000 0    50   ~ 0
-SEL0
-Text Label 2350 4200 0    50   ~ 0
-S&C0
-Text Label 1700 4300 0    50   ~ 0
-U1
-Text Label 1650 4400 0    50   ~ 0
-JD1
-Text Label 2350 4500 0    50   ~ 0
-L1
-Text Label 1650 4600 0    50   ~ 0
-JR1
-Text Label 2350 4300 0    50   ~ 0
-A&B1
-Text Label 2350 4400 0    50   ~ 0
-SEL1
-Text Label 2350 4600 0    50   ~ 0
-S&C1
-Text Label 1500 4100 0    50   ~ 0
-TX|SCK
-Text Label 1500 4500 0    50   ~ 0
-RX|SDA
 $Comp
 L Connector:Conn_01x04_Male Serial1
 U 1 1 620E110F
@@ -2712,6 +2669,32 @@ Wire Wire Line
 	3100 5800 3750 5800
 Wire Wire Line
 	3100 5900 3750 5900
+Text Label 3150 5900 0    50   ~ 0
+TX|SCK
+Text Label 3150 5800 0    50   ~ 0
+RX|SDA
+$Comp
+L power:+3.3V #PWR0151
+U 1 1 6231A1A2
+P 3750 6000
+F 0 "#PWR0151" H 3750 5850 50  0001 C CNN
+F 1 "+3.3V" V 3750 6250 50  0000 C CNN
+F 2 "" H 3750 6000 50  0001 C CNN
+F 3 "" H 3750 6000 50  0001 C CNN
+	1    3750 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 6231B9A6
+P 3750 5700
+F 0 "#PWR0152" H 3750 5450 50  0001 C CNN
+F 1 "GND" V 3755 5572 50  0000 R CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	9800 4800 9800 9150
 Wire Bus Line
@@ -2746,30 +2729,47 @@ Wire Bus Line
 	2900 1050 2900 3500
 Wire Bus Line
 	5250 1050 5250 3500
-Text Label 3150 5900 0    50   ~ 0
-TX|SCK
-Text Label 3150 5800 0    50   ~ 0
+$Comp
+L Connector:DB9_Male_MountingHoles Joy1
+U 1 1 618669CE
+P 850 6200
+F 0 "Joy1" H 700 6800 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" H 200 7000 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 850 6200 50  0001 C CNN
+F 3 " ~" H 850 6200 50  0001 C CNN
+	1    850  6200
+	-1   0    0    1   
+$EndComp
+Text Label 2350 3900 0    50   ~ 0
+A&B0
+Text Label 2350 4000 0    50   ~ 0
+SEL0
+Text Label 2350 4100 0    50   ~ 0
+L0
+Text Label 2350 4200 0    50   ~ 0
+S&C0
+Text Label 2350 4300 0    50   ~ 0
+A&B1
+Text Label 2350 4400 0    50   ~ 0
+SEL1
+Text Label 2350 4500 0    50   ~ 0
+L1
+Text Label 2350 4600 0    50   ~ 0
+S&C1
+Text Label 1650 4600 0    50   ~ 0
+JR1
+Text Label 1500 4500 0    50   ~ 0
 RX|SDA
-$Comp
-L power:+3.3V #PWR0151
-U 1 1 6231A1A2
-P 3750 6000
-F 0 "#PWR0151" H 3750 5850 50  0001 C CNN
-F 1 "+3.3V" V 3750 6250 50  0000 C CNN
-F 2 "" H 3750 6000 50  0001 C CNN
-F 3 "" H 3750 6000 50  0001 C CNN
-	1    3750 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0152
-U 1 1 6231B9A6
-P 3750 5700
-F 0 "#PWR0152" H 3750 5450 50  0001 C CNN
-F 1 "GND" V 3755 5572 50  0000 R CNN
-F 2 "" H 3750 5700 50  0001 C CNN
-F 3 "" H 3750 5700 50  0001 C CNN
-	1    3750 5700
-	0    1    1    0   
-$EndComp
+Text Label 1650 4400 0    50   ~ 0
+JD1
+Text Label 1700 4300 0    50   ~ 0
+U1
+Text Label 1650 4200 0    50   ~ 0
+JR0
+Text Label 1500 4100 0    50   ~ 0
+TX|SCK
+Text Label 1650 4000 0    50   ~ 0
+JD0
+Text Label 1700 3900 0    50   ~ 0
+U0
 $EndSCHEMATC
