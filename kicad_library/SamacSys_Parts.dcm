@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP CS4334-KSZ
+D CS4334-KSZ, Audio DAC Dual 24 bit-, 96ksps +/-5%FSR Serial, 8-Pin SOIC
+K
+F http://www.cirrus.com/en/pubs/proDatasheet/CS4334-5-8-9_F6.pdf
+$ENDCMP
+#
+$CMP AD1580BRTZ-REEL7
+D 1.2 V Micropower, Precision 1.2 V Micropower, Precision
+K
+F http://componentsearchengine.com/Datasheets/1/AD1580BRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP ADV7125KSTZ50
+D ADV7125KSTZ50, Video DAC Triple, 8 bit- 50Msps +/-5%FSR Parallel, 48-Pin LQFP
+K
+F 
+$ENDCMP
+#
+$CMP KLPX-0848A-2-R-G
+D RCA Phono Connectors PCB R/A SINGLE RED/GOLD
+K
+F http://pdf.datasheet.su/kycon/klpx-0848a-2-o.pdf
+$ENDCMP
+#
+#End Doc Library

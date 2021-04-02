@@ -448,10 +448,10 @@ Wire Wire Line
 Wire Wire Line
 	6000 1250 6000 1350
 $Comp
-L Connector_Generic:Conn_02x32_Odd_Even U7
+L Connector_Generic:Conn_02x32_Odd_Even U8
 U 1 1 5FB8669A
 P 7700 3300
-F 0 "U7" H 7750 5017 50  0000 C CNN
+F 0 "U8" H 7750 5017 50  0000 C CNN
 F 1 "Conn_02x32_Odd_Even" H 7750 4926 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x32_P2.54mm_Vertical" H 7700 3300 50  0001 C CNN
 F 3 "~" H 7700 3300 50  0001 C CNN
@@ -815,10 +815,10 @@ Entry Wire Line
 Entry Wire Line
 	2800 3600 2900 3500
 $Comp
-L Connector_Generic:Conn_02x32_Odd_Even U8
+L Connector_Generic:Conn_02x32_Odd_Even U7
 U 1 1 5FB89315
 P 2000 3400
-F 0 "U8" H 2050 5117 50  0000 C CNN
+F 0 "U7" H 2050 5117 50  0000 C CNN
 F 1 "Conn_02x32_Odd_Even" H 2050 5026 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x32_P2.54mm_Vertical" H 2000 3400 50  0001 C CNN
 F 3 "~" H 2000 3400 50  0001 C CNN
@@ -1259,12 +1259,12 @@ F 3 "~" H 3750 6950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:AD1580BRTZ-REEL7 VREF1
+L extralibs:AD1580BRTZ-REEL7 VREF1
 U 1 1 5FC01BBC
 P 3750 7450
 F 0 "VREF1" H 4200 7715 50  0000 C CNN
 F 1 "AD1580" H 4200 7624 50  0000 C CNN
-F 2 "GithubDownloaded2:SOT95P237X112-3N" H 4500 7550 50  0001 L CNN
+F 2 "extralibrary:SOT95P237X112-3N" H 4500 7550 50  0001 L CNN
 F 3 "http://componentsearchengine.com/Datasheets/1/AD1580BRTZ-REEL7.pdf" H 4500 7450 50  0001 L CNN
 F 4 "1.2 V Micropower, Precision 1.2 V Micropower, Precision" H 4500 7350 50  0001 L CNN "Description"
 F 5 "" H 4500 7250 50  0001 L CNN "Height"
@@ -1445,12 +1445,12 @@ Connection ~ 7500 6050
 Wire Wire Line
 	7500 6050 7500 6200
 $Comp
-L SamacSys_Parts:ADV7125KSTZ50 IC1
+L extralibs:ADV7125KSTZ50 IC1
 U 1 1 5FC09AE4
 P 5250 6700
 F 0 "IC1" H 6000 6100 50  0000 L CNN
 F 1 "ADV7125" H 5750 6250 50  0000 L CNN
-F 2 "GithubDownloaded:QFP50P900X900X160-48N" H 6800 7300 50  0001 L CNN
+F 2 "extralibrary:QFP50P900X900X160-48N" H 6800 7300 50  0001 L CNN
 F 3 "" H 6800 7200 50  0001 L CNN
 F 4 "ADV7125KSTZ50, Video DAC Triple, 8 bit- 50Msps +/-5%FSR Parallel, 48-Pin LQFP" H 6800 7100 50  0001 L CNN "Description"
 F 5 "" H 6800 7000 50  0001 L CNN "Height"
@@ -1877,7 +1877,7 @@ R6
 Text Label 8000 3900 0    50   ~ 0
 R7
 Entry Wire Line
-	8650 3500 8750 3600
+	8650 3500 8750 3400
 Entry Wire Line
 	8650 3600 8750 3700
 Entry Wire Line
@@ -1998,15 +1998,13 @@ Wire Wire Line
 	9000 7500 9100 7500
 Wire Wire Line
 	9400 7500 9700 7500
-Wire Bus Line
-	8750 4800 9800 4800
 $Comp
-L SamacSys_Parts:CS4334-KSZ IC3
+L extralibs:CS4334-KSZ IC3
 U 1 1 5FCBE5DA
 P 3800 5050
 F 0 "IC3" H 4500 5315 50  0000 C CNN
 F 1 "CS4334" H 4500 5224 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 5050 5150 50  0001 L CNN
+F 2 "extralibrary:SOIC127P600X175-8N" H 5050 5150 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/CS4334-KSZ.pdf" H 5050 5050 50  0001 L CNN
 F 4 "CS4334-KSZ, Audio DAC Dual 24 bit-, 96ksps +/-5%FSR Serial, 8-Pin SOIC" H 5050 4950 50  0001 L CNN "Description"
 F 5 "1.75" H 5050 4850 50  0001 L CNN "Height"
@@ -2320,39 +2318,20 @@ Entry Wire Line
 Entry Wire Line
 	2800 3800 2900 3900
 $Comp
-L Connector:Conn_Coaxial AudioL1
+L extralibs:KLPX-0848A-2-R-G AudioL1
 U 1 1 6039666D
-P 3250 8750
-F 0 "AudioL1" H 3350 8725 50  0000 L CNN
-F 1 "Conn_Coaxial" H 3350 8634 50  0000 L CNN
-F 2 "LibraryLoader:KLPX0848A2RG" H 3250 8750 50  0001 C CNN
-F 3 " ~" H 3250 8750 50  0001 C CNN
-	1    3250 8750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 8750 3050 8750
-Connection ~ 2600 8750
-Wire Wire Line
-	3250 8950 3250 9350
-Wire Wire Line
-	3250 9350 2600 9350
-$Comp
-L Connector:Conn_Coaxial AudioR1
-U 1 1 603F110F
-P 3250 9950
-F 0 "AudioR1" H 3350 9832 50  0000 L CNN
-F 1 "Conn_Coaxial" H 3350 9923 50  0000 L CNN
-F 2 "LibraryLoader:KLPX0848A2RG" H 3250 9950 50  0001 C CNN
-F 3 " ~" H 3250 9950 50  0001 C CNN
-	1    3250 9950
+P 3250 8850
+F 0 "AudioL1" H 3450 9150 50  0000 L CNN
+F 1 "RCA" H 3450 9050 50  0000 L CNN
+F 2 "extralibrary:KLPX0848A2RG" H 3250 8850 50  0001 C CNN
+F 3 " ~" H 3250 8850 50  0001 C CNN
+	1    3250 8850
 	1    0    0    1   
 $EndComp
+Connection ~ 2600 8750
 Wire Wire Line
-	3050 9950 2600 9950
+	3250 9350 2600 9350
 Connection ~ 2600 9950
-Wire Wire Line
-	3250 9750 3250 9350
 Connection ~ 3250 9350
 Entry Wire Line
 	1000 4000 1100 3900
@@ -2841,44 +2820,6 @@ Wire Wire Line
 	1500 7550 1900 7550
 Wire Wire Line
 	1700 7450 1900 7450
-Wire Bus Line
-	9800 4800 9800 9150
-Wire Bus Line
-	1400 6900 1400 7450
-Wire Bus Line
-	3200 4150 3200 5400
-Wire Bus Line
-	3000 6900 3000 7450
-Wire Bus Line
-	4750 9150 9800 9150
-Wire Bus Line
-	2900 4000 2900 4700
-Wire Bus Line
-	1000 4000 1000 4700
-Wire Bus Line
-	1650 5500 1650 6400
-Wire Bus Line
-	6700 3700 6700 4800
-Wire Bus Line
-	4750 5600 6150 5600
-Wire Bus Line
-	4350 1050 4350 2900
-Wire Bus Line
-	3000 5500 3000 6900
-Wire Bus Line
-	8750 1050 8750 3400
-Wire Bus Line
-	1000 1050 1000 3500
-Wire Bus Line
-	4750 5600 4750 9150
-Wire Bus Line
-	8750 3600 8750 4800
-Wire Bus Line
-	6700 1050 6700 3400
-Wire Bus Line
-	2900 1050 2900 3500
-Wire Bus Line
-	5250 1050 5250 3500
 $Comp
 L power:GND #PWR0156
 U 1 1 61180DF2
@@ -2901,4 +2842,109 @@ F 3 "" H 2100 5600 50  0001 C CNN
 	1    2100 5600
 	-1   0    0    1   
 $EndComp
+Wire Bus Line
+	8750 4800 9800 4800
+NoConn ~ 8400 7500
+NoConn ~ 9000 6900
+Wire Wire Line
+	2600 8750 3000 8750
+Wire Wire Line
+	3250 8850 3250 9350
+$Comp
+L extralibs:KLPX-0848A-2-R-G AudioR1
+U 1 1 60906F6F
+P 3250 9850
+F 0 "AudioR1" H 3450 10150 50  0000 L CNN
+F 1 "RCA" H 3450 10050 50  0000 L CNN
+F 2 "extralibrary:KLPX0848A2RG" H 3250 9850 50  0001 C CNN
+F 3 " ~" H 3250 9850 50  0001 C CNN
+	1    3250 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 9350 3250 9850
+Wire Wire Line
+	2600 9950 3000 9950
+$Comp
+L Device:R J0
+U 1 1 60B61971
+P 9250 7100
+F 0 "J0" V 9250 7150 50  0000 R CNN
+F 1 "0R" V 9350 7200 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 9180 7100 50  0001 C CNN
+F 3 "~" H 9250 7100 50  0001 C CNN
+	1    9250 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R J1
+U 1 1 60B62268
+P 9250 7700
+F 0 "J1" V 9250 7750 50  0000 R CNN
+F 1 "0R" V 9350 7800 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 9180 7700 50  0001 C CNN
+F 3 "~" H 9250 7700 50  0001 C CNN
+	1    9250 7700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 7700 9100 7700
+Wire Wire Line
+	9000 7100 9100 7100
+Text GLabel 3000 8600 1    50   Input ~ 0
+AOUTJL
+Wire Wire Line
+	3000 8600 3000 8750
+Connection ~ 3000 8750
+Wire Wire Line
+	3000 8750 3250 8750
+Text GLabel 3000 10100 3    50   Input ~ 0
+AOUTJR
+Wire Wire Line
+	3000 10100 3000 9950
+Wire Bus Line
+	9800 4800 9800 9150
+Wire Bus Line
+	1400 6900 1400 7450
+Wire Bus Line
+	3200 4150 3200 5400
+Wire Bus Line
+	3000 6900 3000 7450
+Wire Bus Line
+	4750 9150 9800 9150
+Wire Bus Line
+	2900 4000 2900 4700
+Wire Bus Line
+	1000 4000 1000 4700
+Wire Bus Line
+	1650 5500 1650 6400
+Wire Bus Line
+	8750 3700 8750 4800
+Wire Bus Line
+	6700 3700 6700 4800
+Wire Bus Line
+	4750 5600 6150 5600
+Wire Bus Line
+	4350 1050 4350 2900
+Wire Bus Line
+	3000 5500 3000 6900
+Wire Bus Line
+	8750 1050 8750 3400
+Wire Bus Line
+	1000 1050 1000 3500
+Wire Bus Line
+	4750 5600 4750 9150
+Wire Bus Line
+	6700 1050 6700 3400
+Wire Bus Line
+	2900 1050 2900 3500
+Wire Bus Line
+	5250 1050 5250 3500
+Connection ~ 3000 9950
+Wire Wire Line
+	3000 9950 3250 9950
+Text GLabel 9400 7100 2    50   Input ~ 0
+AOUTJL
+Text GLabel 9400 7700 2    50   Input ~ 0
+AOUTJR
 $EndSCHEMATC

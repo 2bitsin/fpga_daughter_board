@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name fpga_hat-rescue)(type Legacy)(uri ${KIPRJMOD}/fpga_hat-rescue.lib)(options "")(descr ""))
+  (lib (name extralibs)(type Legacy)(uri ${KIPRJMOD}/kicad_library/SamacSys_Parts.lib)(options "")(descr ""))
+)
