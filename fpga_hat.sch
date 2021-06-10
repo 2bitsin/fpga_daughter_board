@@ -2472,25 +2472,12 @@ F 3 "" H 2550 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 4900 2550 4900
-$Comp
-L Connector:DB9_Male_MountingHoles Joy2
-U 1 1 6186E5CE
-P 2100 6200
-F 0 "Joy2" H 1950 6800 50  0000 L CNN
-F 1 "DB9_Male_MountingHoles" V 2350 5750 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 2100 6200 50  0001 C CNN
-F 3 " ~" H 2100 6200 50  0001 C CNN
-	1    2100 6200
-	-1   0    0    1   
-$EndComp
-Entry Wire Line
-	1550 5800 1650 5700
 Entry Wire Line
 	1550 5900 1650 5800
 Entry Wire Line
 	1550 6000 1650 5900
 Entry Wire Line
-	1550 6100 1650 6000
+	1550 6300 1650 6200
 Entry Wire Line
 	1550 6200 1650 6100
 Entry Wire Line
@@ -2504,21 +2491,17 @@ Entry Wire Line
 Entry Wire Line
 	2900 6200 3000 6100
 Entry Wire Line
-	2900 6100 3000 6000
+	2900 6300 3000 6200
 Entry Wire Line
 	2900 6000 3000 5900
 Entry Wire Line
 	2900 5900 3000 5800
 Entry Wire Line
-	2900 5800 3000 5700
-Wire Wire Line
-	1150 5800 1550 5800
+	2900 6600 3000 6500
 Wire Wire Line
 	1150 5900 1550 5900
 Wire Wire Line
 	1150 6000 1550 6000
-Wire Wire Line
-	1150 6100 1550 6100
 Wire Wire Line
 	1150 6400 1550 6400
 Wire Wire Line
@@ -2528,44 +2511,29 @@ Wire Wire Line
 Wire Wire Line
 	2400 6200 2900 6200
 Wire Wire Line
-	2400 6100 2900 6100
-Wire Wire Line
 	2400 6000 2900 6000
 Wire Wire Line
 	2400 5900 2900 5900
-Wire Wire Line
-	2400 5800 2900 5800
-$Comp
-L power:GND #PWR0147
-U 1 1 61FF5750
-P 2400 6300
-F 0 "#PWR0147" H 2400 6050 50  0001 C CNN
-F 1 "GND" V 2405 6172 50  0000 R CNN
-F 2 "" H 2400 6300 50  0001 C CNN
-F 3 "" H 2400 6300 50  0001 C CNN
-	1    2400 6300
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0148
 U 1 1 61FF6E90
-P 1150 6300
-F 0 "#PWR0148" H 1150 6050 50  0001 C CNN
-F 1 "GND" V 1155 6172 50  0000 R CNN
-F 2 "" H 1150 6300 50  0001 C CNN
-F 3 "" H 1150 6300 50  0001 C CNN
-	1    1150 6300
+P 1150 6100
+F 0 "#PWR0148" H 1150 5850 50  0001 C CNN
+F 1 "GND" V 1155 5972 50  0000 R CNN
+F 2 "" H 1150 6100 50  0001 C CNN
+F 3 "" H 1150 6100 50  0001 C CNN
+	1    1150 6100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0149
 U 1 1 61FF7B78
-P 1150 6600
-F 0 "#PWR0149" H 1150 6450 50  0001 C CNN
-F 1 "+3.3V" V 1150 6850 50  0000 C CNN
-F 2 "" H 1150 6600 50  0001 C CNN
-F 3 "" H 1150 6600 50  0001 C CNN
-	1    1150 6600
+P 1150 5800
+F 0 "#PWR0149" H 1150 5650 50  0001 C CNN
+F 1 "+3.3V" V 1100 6000 50  0000 C CNN
+F 2 "" H 1150 5800 50  0001 C CNN
+F 3 "" H 1150 5800 50  0001 C CNN
+	1    1150 5800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -2575,43 +2543,37 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0150
 U 1 1 62032B19
-P 2400 6600
-F 0 "#PWR0150" H 2400 6450 50  0001 C CNN
-F 1 "+3.3V" V 2400 6850 50  0000 C CNN
-F 2 "" H 2400 6600 50  0001 C CNN
-F 3 "" H 2400 6600 50  0001 C CNN
-	1    2400 6600
+P 2400 5800
+F 0 "#PWR0150" H 2400 5650 50  0001 C CNN
+F 1 "+3.3V" V 2300 5950 50  0000 C CNN
+F 2 "" H 2400 5800 50  0001 C CNN
+F 3 "" H 2400 5800 50  0001 C CNN
+	1    2400 5800
 	0    1    1    0   
 $EndComp
 Connection ~ 1650 5500
-Text Label 1450 5800 0    50   ~ 0
+Text Label 1450 6600 0    50   ~ 0
 U0
-Text Label 1400 6000 0    50   ~ 0
+Text Label 1400 6400 0    50   ~ 0
 JD0
 Text Label 1450 6200 0    50   ~ 0
 L0
-Text Label 1400 6400 0    50   ~ 0
+Text Label 1400 6000 0    50   ~ 0
 JR0
-Text Label 1350 5900 0    50   ~ 0
-A&B0
-Text Label 1350 6100 0    50   ~ 0
-SEL0
 Text Label 1350 6500 0    50   ~ 0
+A&B0
+Text Label 1350 6300 0    50   ~ 0
+SEL0
+Text Label 1350 5900 0    50   ~ 0
 S&C0
-Text Label 2800 5800 0    50   ~ 0
+Text Label 2800 6600 0    50   ~ 0
 U1
-Text Label 2700 5900 0    50   ~ 0
-A&B1
-Text Label 2750 6000 0    50   ~ 0
+Text Label 2750 6400 0    50   ~ 0
 JD1
-Text Label 2700 6100 0    50   ~ 0
-SEL1
 Text Label 2800 6200 0    50   ~ 0
 L1
-Text Label 2750 6400 0    50   ~ 0
+Text Label 2750 6000 0    50   ~ 0
 JR1
-Text Label 2700 6500 0    50   ~ 0
-S&C1
 $Comp
 L Connector:Conn_01x04_Male Serial1
 U 1 1 620E110F
@@ -2902,14 +2864,59 @@ Text GLabel 3000 10100 3    50   Input ~ 0
 AOUTJR
 Wire Wire Line
 	3000 10100 3000 9950
+Connection ~ 3000 9950
+Wire Wire Line
+	3000 9950 3250 9950
+Text GLabel 9400 7100 2    50   Input ~ 0
+AOUTJL
+Text GLabel 9400 7700 2    50   Input ~ 0
+AOUTJR
+Text Label 2700 6300 0    50   ~ 0
+SEL1
+Text Label 2700 6500 0    50   ~ 0
+A&B1
+Text Label 2700 5900 0    50   ~ 0
+S&C1
+Wire Wire Line
+	2900 6300 2400 6300
+Wire Wire Line
+	2900 6600 2400 6600
+$Comp
+L power:GND #PWR0147
+U 1 1 61FF5750
+P 2400 6100
+F 0 "#PWR0147" H 2400 5850 50  0001 C CNN
+F 1 "GND" V 2405 5972 50  0000 R CNN
+F 2 "" H 2400 6100 50  0001 C CNN
+F 3 "" H 2400 6100 50  0001 C CNN
+	1    2400 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles Joy2
+U 1 1 6186E5CE
+P 2100 6200
+F 0 "Joy2" H 1950 6800 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" V 2350 5750 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 2100 6200 50  0001 C CNN
+F 3 " ~" H 2100 6200 50  0001 C CNN
+	1    2100 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6300 1550 6300
+Entry Wire Line
+	1550 6600 1650 6500
+Wire Wire Line
+	1150 6600 1550 6600
 Wire Bus Line
 	9800 4800 9800 9150
 Wire Bus Line
 	1400 6900 1400 7450
 Wire Bus Line
-	3200 4150 3200 5400
-Wire Bus Line
 	3000 6900 3000 7450
+Wire Bus Line
+	3200 4150 3200 5400
 Wire Bus Line
 	4750 9150 9800 9150
 Wire Bus Line
@@ -2917,7 +2924,9 @@ Wire Bus Line
 Wire Bus Line
 	1000 4000 1000 4700
 Wire Bus Line
-	1650 5500 1650 6400
+	1650 5500 1650 6500
+Wire Bus Line
+	3000 5500 3000 6900
 Wire Bus Line
 	8750 3700 8750 4800
 Wire Bus Line
@@ -2926,8 +2935,6 @@ Wire Bus Line
 	4750 5600 6150 5600
 Wire Bus Line
 	4350 1050 4350 2900
-Wire Bus Line
-	3000 5500 3000 6900
 Wire Bus Line
 	8750 1050 8750 3400
 Wire Bus Line
@@ -2940,11 +2947,4 @@ Wire Bus Line
 	2900 1050 2900 3500
 Wire Bus Line
 	5250 1050 5250 3500
-Connection ~ 3000 9950
-Wire Wire Line
-	3000 9950 3250 9950
-Text GLabel 9400 7100 2    50   Input ~ 0
-AOUTJL
-Text GLabel 9400 7700 2    50   Input ~ 0
-AOUTJR
 $EndSCHEMATC
